@@ -7,5 +7,5 @@
 token 失败与上传失败分开报：前者通常是凭据/配置问题（`USER`），后者是存储端的问题。
 
 ```bash
-./build.sh && ./tools/smoke.sh
+mvn verify   # build + src/test/java/atom/GcsUploadIT.java（对着 tools/fake_gcs.py）
 ```
